@@ -1,0 +1,18 @@
+#body{
+  background-color: rgb(72, 69, 255);
+  margin: 0;
+}
+
+.navb{
+  background-color: none;
+  padding: auto;
+}
+
+#text{
+  color: white;
+}
+
+#carrusel{
+  margin-left: 50%;
+  
+}
