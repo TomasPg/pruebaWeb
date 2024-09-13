@@ -9,13 +9,7 @@ return (
     <>
       <div>
         <Navb></Navb>
-      </div>
-
-      <div>
         <Main></Main>
-      </div>
-
-      <div>
         <Button></Button>
       </div>
     </>

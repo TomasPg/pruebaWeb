@@ -1,18 +1,68 @@
-#body{
+#body {
   background-color: rgb(72, 69, 255);
   margin: 0;
 }
 
-.navb{
-  background-color: none;
-  padding: auto;
+.logo {
+  height: 60px;
+  margin-left: -200%;
 }
 
-#text{
+#navb {
+  background-color: none;
+  padding: 10px 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+#navb .container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#navb .nav-link {
   color: white;
 }
 
-#carrusel{
-  margin-left: 50%;
-  
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
 }
+
+.text-section {
+  color: white;
+  flex: 1;
+  margin-right: 40px;
+  text-align: left;
+}
+
+.carousel-section {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 300px;
+}
+
+.carousel-container {
+  width: 500px;
+  height: 370px;
+  overflow: hidden;
+}
+
+.carousel-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.button-section {
+  margin-left: 1%;
+  display: flex;
+  gap: 10px;
+}
+

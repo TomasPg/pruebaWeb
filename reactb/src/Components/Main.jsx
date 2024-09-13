@@ -1,46 +1,50 @@
-import React from 'react'
-import Carousel from 'react-bootstrap/Carousel'
-import laptop from '../assets/laptop.png'
+import React from 'react';
+import Carousel from 'react-bootstrap/Carousel';
+import laptop from '../assets/laptop.png';
 
-function Carrusel() {
+function Main() {
   return (
-    <>
-    <div id='text'>
-        <h4>Computer and Laptop</h4>
-        <h1>Accesories</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut facere amet laboriosam illo, <br />animi aperiam pariatur quasi dolore optio facilis hic quae, <br />voluptatibus rerum dolorum sit maxime? Consequuntur, a voluptas!</p>
-    </div>
-        <div id='carrusel'>
-        <Carousel data-bs-theme="dark">
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src={laptop}
-          style={{width:200,height:250}}
-          alt="First slide"
-        />
-      </Carousel.Item>
+    <div className="main-container">
+      <div id='text' className="text-section">
+        <h3>Computer and Laptop</h3>
+        <h1>Accessories</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut facere amet laboriosam illo, <br />
+          animi aperiam pariatur quasi dolore optio facilis hic quae, <br />
+          voluptatibus rerum dolorum sit maxime? Consequuntur, a voluptas!
+        </p>
+      </div>
+      <div id='carrusel' className="carousel-section">
+        <div className="carousel-container">
+          <Carousel data-bs-theme="light">
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src={laptop}
+                alt="First slide"
+              />
+            </Carousel.Item>
 
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src={laptop}
-          style={{width:200,height:250}}
-          alt="First slide"
-        />
-      </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src={laptop}
+                alt="Second slide"
+              />
+            </Carousel.Item>
 
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src={laptop}
-          style={{width:200,height:250}}
-          alt="First slide"
-        />
-      </Carousel.Item>
-    </Carousel>
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src={laptop}
+                alt="Third slide"
+              />
+            </Carousel.Item>
+          </Carousel>
         </div>
-    </>
-  )
+      </div>
+    </div>
+  );
 }
-export default Carrusel
+
+export default Main;
